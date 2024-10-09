@@ -62,6 +62,8 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
 
+  require 'custom.plugins.alpha-nvim',
+
   require 'custom.plugins.bufdel',
   require 'custom.plugins.bufferline',
 
