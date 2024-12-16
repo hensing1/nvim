@@ -35,6 +35,10 @@ vim.keymap.set('n', '<A-l>', '<cmd>BufferLineMoveNext<CR>', { desc = 'Move buffe
 vim.keymap.set('n', '<A-h>', '<cmd>BufferLineMovePrev<CR>', { desc = 'Move buffer to the left' })
 vim.keymap.set('n', '<leader>x', '<cmd>BufDel<CR>', { desc = 'Close buffer' })
 
+-- remap for searching word under cursor
+vim.keymap.set('n', '+', '*')
+vim.keymap.set('n', '*', '#')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
