@@ -170,6 +170,14 @@ return {
         -- gopls = {},
         pyright = {
           -- filetypes = { 'python' },
+          settings = {
+            python = {
+              analysis = {
+                typeCheckingMode = 'basic',
+                ignore = { 'ghudi' },
+              },
+            },
+          },
         },
         -- snakemake
         snakefmt = {
@@ -199,6 +207,10 @@ return {
             },
           },
         },
+
+        -- markdownlint = {},
+        markdown_oxide = {},
+        glow = {},
       }
 
       -- Ensure the servers and tools above are installed

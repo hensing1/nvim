@@ -39,6 +39,9 @@ vim.keymap.set('n', '<leader>x', '<cmd>BufDel<CR>', { desc = 'Close buffer' })
 vim.keymap.set('n', '+', '*')
 vim.keymap.set('n', '*', '#')
 
+-- insert mode
+vim.keymap.set('i', '<C-BS>', '<C-w>', { desc = 'Delete word in insert mode', noremap = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
